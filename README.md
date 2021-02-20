@@ -26,6 +26,6 @@ sudo update-desktop-database
 
 # To Try Install firefox on fedora (for testing)
 
-  * xdg-open pylinuxoneclick://for_test_installfirefox.py
+  * [xdg-open pylinuxoneclick://for_test_installfirefox.py](xdg-open pylinuxoneclick://for_test_installfirefox.py)
 
   * xdg-open pylinuxoneclick://exmaples?hello_world.py

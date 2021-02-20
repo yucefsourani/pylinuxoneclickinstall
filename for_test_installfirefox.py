@@ -21,7 +21,7 @@
 #  MA 02110-1301, USA.
 #  
 # 
-__arch__           = ["all"]
+__arch__           = ["f"]
 __distro__         = ["all"]
 __distro_version__ = ["all"]
 __desktop__        = ["all"]

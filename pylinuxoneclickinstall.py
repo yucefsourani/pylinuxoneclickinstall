@@ -130,7 +130,13 @@ def downlaod(link,location):
         print(e)
         return False
     return saveas
-        
+
+
+def exit__(msg,code):
+    print(msg)
+    os.system("echo Press any key to exit.;read")
+    exit(code)
+    
 if __name__ == "__main__" : 
     try:
         url = sys.argv[1]
@@ -142,24 +148,27 @@ if __name__ == "__main__" :
                 if module__:
                     arch = module__.__arch__
                     if "all" not in arch  and system_arch not in arch:
-                        print("\nThis Module Support This Arch '{}' Only .\n".format(arch))
-                        exit(4)
+                        exit__("\nThis Module Support This Arch '{}' Only .\n".format(arch),4)
+
                     distro = module__.__distro__
                     
                     if "all" not in distro  and get_distro_name_like() not in distro:
-                        print("\nThis Module Support This Distro '{}' Only .\n".format(distro))
-                        exit(5)
+                        exit__("\nThis Module Support This Distro '{}' Only .\n".format(distro),5)
+
                     distro_version = module__.__distro_version__
                     if "all" not in distro_version  and get_distro_version_like() not in distro_version:
-                        print("\nThis Module Support This Distro Version '{}' Only .\n".format(distro_version))
-                        exit(6)
+                        exit__("\nThis Module Support This Distro Version '{}' Only .\n".format(distro_version),6)
+
                     desktop = module__.__desktop__
                     if desktop != "None":
                         if "all" not in desktop  and not any([True for i in desktop if distro_desktop  in i]):
-                            print("\nThis Module Support This Desktop '{}' Only .\n".format(desktop))
-                            exit(7)
+                            exit__("\nThis Module Support This Desktop '{}' Only .\n".format(desktop),7)
+
                     
-                    file_to_run = write_to_tmp(module__.__commands__)
+                    commands = module__.__commands__.copy()
+                    commands.append("echo Press any key to exit.")
+                    commands.append("read")
+                    file_to_run = write_to_tmp(commands)
                     while True:
                         os.system("clear")
                         print("\n"+real_url+"\n")
@@ -168,22 +177,19 @@ if __name__ == "__main__" :
                         for i in module__.__commands__:
                             print("[Command {}]- {}".format(count,i))
                             count += 1
-                        print()
-                        answer = input("- ").strip()
+                        answer = input("\n- ").strip()
                         if answer == "y" or answer == "Y" :
                             break
                         elif answer == "n" or answer == "N":
-                            print("\nBye...")
-                            exit(0)
+                            exit__("\nBye...",0)
+
                     if subprocess.call("bash -c '{}'".format(file_to_run),shell=True) != 0 :
-                        print("\nTask Fail.\n")
-                        exit(1)
+                        exit__("\nTask Fail.\n",1)
+
                 else:
-                    print("\nLoading {} Fail.\n".format(module_location))
-                    exit(2)
+                    exit__("\nLoading {} Fail.\n".format(module_location),2)
             else:
-                print("\nError Downloading {} .\n".format(real_url))
-                exit(3)
+                exit__("\nError Downloading {} .\n".format(real_url),3)
     except Exception as e:
         print(e)
         

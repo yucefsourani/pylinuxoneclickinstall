@@ -26,5 +26,5 @@ sudo update-desktop-database
 
 # For test 
 
-* run fff.html in your browser and click on links
+* run fff.html in your web browser and click on links
 

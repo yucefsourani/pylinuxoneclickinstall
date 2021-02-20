@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=pylinuxoneclickurl
+Exec=pylinuxoneclickinstall.py  %U
+Terminal=false
+NoDisplay=true
+MimeType=x-scheme-handler/pylinuxoneclick
+X-Desktop-File-Install-Version=0.26

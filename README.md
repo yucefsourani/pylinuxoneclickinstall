@@ -25,9 +25,7 @@ sudo update-desktop-database
 
 
 # To Try Install firefox on fedora (for testing)
+<a href="pylinuxoneclick://for_test_installfirefox.py" target="_top">Download Firefox By Dnf</a>
 
-  * [pylinuxoneclick://for_test_installfirefox.py](pylinuxoneclick://for_test_installfirefox.py)
+<a href="pylinuxoneclick://exmaples?hello_world.py" target="_top">Print Hello World</a>
 
-  * xdg-open pylinuxoneclick://exmaples?hello_world.py
-
-  * [pylinuxoneclick://exmaples?hello_world.py](pylinuxoneclick://exmaples?hello_world.py)

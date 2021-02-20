@@ -162,6 +162,7 @@ if __name__ == "__main__" :
                     file_to_run = write_to_tmp(module__.__commands__)
                     while True:
                         os.system("clear")
+                        print("\n"+real_url+"\n")
                         print("\nCommands To Run y/n ?\n")
                         count = 1
                         for i in module__.__commands__:

@@ -1,7 +1,7 @@
 # pylinuxoneclickinstall
 
 
-# to use (Beta)
+# to install (Beta)
 
 cd ~/ && git clone https://github.com/yucefsourani/pylinuxoneclickinstall
 

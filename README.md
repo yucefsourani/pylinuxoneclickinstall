@@ -24,5 +24,7 @@ sudo update-desktop-database
  * xdg-utils
 
 
+# For test 
 
+* run fff.html in your browser and click on links
 

@@ -28,8 +28,8 @@ import sys
 import subprocess
 from site import addsitedir
 import urllib.request as request
+import json
 import importlib
-
 
 system_arch = os.uname().machine
 distro_desktop = os.getenv("XDG_CURRENT_DESKTOP",False)
@@ -88,7 +88,6 @@ def load_plugin(module_file):
         spec.loader.exec_module(module)
         return module
     return False
-
     
 def write_to_tmp(commands):
     time_now      = int(time.time()) * 4
@@ -142,30 +141,37 @@ if __name__ == "__main__" :
         url = sys.argv[1]
         real_url = os.path.join("https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/main",url.split(":",1)[1][2:].replace("?","/"))
         with tempfile.TemporaryDirectory() as tmpdirname:
-            module_location = downlaod(real_url,tmpdirname)
-            if module_location:
-                module__ = load_plugin(module_location)
-                if module__:
-                    arch = module__.__arch__
+            plugin_location = downlaod(real_url,tmpdirname)
+            if plugin_location:
+                if plugin_location.endswith(".py"):
+                    plugin__ = load_plugin(plugin_location)
+                    plugin__ = plugin__.__dict__.copy()
+                elif plugin_location.endswith(".json"):
+                    with open(plugin_location) as json_f:
+                        plugin__ = json.load(json_f)
+                else:
+                    exit__("\nLoading {} Fail.\n".format(plugin_location),2) 
+                if plugin__:
+                    arch = plugin__["__arch__"]
                     if "all" not in arch  and system_arch not in arch:
                         exit__("\nThis Module Support This Arch '{}' Only .\n".format(arch),4)
 
-                    distro = module__.__distro__
+                    distro = plugin__["__distro__"]
                     
                     if "all" not in distro  and get_distro_name_like() not in distro:
                         exit__("\nThis Module Support This Distro '{}' Only .\n".format(distro),5)
 
-                    distro_version = module__.__distro_version__
+                    distro_version = plugin__["__distro_version__"]
                     if "all" not in distro_version  and get_distro_version_like() not in distro_version:
                         exit__("\nThis Module Support This Distro Version '{}' Only .\n".format(distro_version),6)
 
-                    desktop = module__.__desktop__
+                    desktop = plugin__["__desktop__"]
                     if desktop != "None":
                         if "all" not in desktop  and not any([True for i in desktop if distro_desktop  in i]):
                             exit__("\nThis Module Support This Desktop '{}' Only .\n".format(desktop),7)
 
                     
-                    commands = module__.__commands__.copy()
+                    commands = plugin__["__commands__"].copy()
                     commands.append("echo Press any key to exit.")
                     commands.append("read")
                     file_to_run = write_to_tmp(commands)
@@ -174,7 +180,7 @@ if __name__ == "__main__" :
                         print("\n"+real_url+"\n")
                         print("\nCommands To Run y/n ?\n")
                         count = 1
-                        for i in module__.__commands__:
+                        for i in plugin__["__commands__"]:
                             print("[Command {}]- {}".format(count,i))
                             count += 1
                         answer = input("\n- ").strip()
@@ -187,7 +193,7 @@ if __name__ == "__main__" :
                         exit__("\nTask Fail.\n",1)
 
                 else:
-                    exit__("\nLoading {} Fail.\n".format(module_location),2)
+                    exit__("\nLoading {} Fail.\n".format(plugin_location),2)
             else:
                 exit__("\nError Downloading {} .\n".format(real_url),3)
     except Exception as e:

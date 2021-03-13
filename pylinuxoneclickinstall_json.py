@@ -147,7 +147,8 @@ if __name__ == "__main__" :
                     plugin__ = load_plugin(plugin_location)
                     plugin__ = plugin__.__dict__.copy()
                 elif plugin_location.endswith(".json"):
-                    plugin__ = json.loads(plugin_location)
+                    with open(plugin_location) as json_f:
+                        plugin__ = json.load(json_f)
                 else:
                     exit__("\nLoading {} Fail.\n".format(plugin_location),2) 
                 if plugin__:

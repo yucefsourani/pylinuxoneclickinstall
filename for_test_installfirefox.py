@@ -26,3 +26,4 @@ __distro__         = ["fedora"]
 __distro_version__ = ["all"]
 __desktop__        = ["all"]
 __commands__       = ["echo hi","pkexec dnf install firefox -y"]
+

@@ -144,6 +144,14 @@ if __name__ == "__main__" :
             plugin_location = downlaod(real_url,tmpdirname)
             if plugin_location:
                 if plugin_location.endswith(".py"):
+                    while True:
+                        os.system("clear")
+                        print("\n\033[31mWARNING !\033[0m \033[34mPython Module will be running and may be doing some invisible actions\033[0m\n\n\033[34mDo you agree\033[0m  \033[32my/n ?\033[0m\n")
+                        answer = input("\n- ").strip()
+                        if answer == "y" or answer == "Y" :
+                            break
+                        elif answer == "n" or answer == "N":
+                            exit__("\nBye...",0)
                     plugin__ = load_plugin(plugin_location)
                     plugin__ = plugin__.__dict__.copy()
                 elif plugin_location.endswith(".json"):

@@ -28,3 +28,4 @@ sudo update-desktop-database
 
 * run fff.html in your web browser and click on links
 
+[Install Firefox Test](pylinuxoneclick://for_test_installfirefox.py)

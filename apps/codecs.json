@@ -1,0 +1,8 @@
+{
+    "__arch__"           : ["all"],
+    "__distro__"         : ["fedora"],
+    "__distro_version__" : ["all"],
+    "__desktop__"        : ["all"],
+    "__commands__"       : ["sudo dnf install  --best -y --nogpgcheck  http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm","sudo dnf install gstreamer1-plugins-{bad-\\*,good-\\*,base} gstreamer1-plugin-openh264 gstreamer1-libav lame\\* --exclude=gstreamer1-plugins-bad-free-devel,lame-devel --skip-broken -y","sudo dnf group upgrade --with-optional Multimedia --skip-broken -y"]
+
+}

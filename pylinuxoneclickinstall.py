@@ -135,21 +135,33 @@ def exit__(msg,code):
     print(msg)
     os.system("echo Press any key to exit.;read")
     exit(code)
-    
+
 if __name__ == "__main__" : 
     try:
         url = sys.argv[1]
         real_url = os.path.join("https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/main",url.split(":",1)[1][2:].replace("?","/"))
         with tempfile.TemporaryDirectory() as tmpdirname:
+            print("Downloading {} Plugin...\n".format(real_url))
             plugin_location = downlaod(real_url,tmpdirname)
             if plugin_location:
                 if plugin_location.endswith(".py"):
+                    clear = True
                     while True:
-                        os.system("clear")
-                        print("\n\033[31mWARNING !\033[0m \033[34mPython Module will be running and may be doing some invisible actions\033[0m\n\n\033[34mDo you agree\033[0m  \033[32my/n ?\033[0m\n")
+                        if clear:
+                            os.system("clear")
+                        clear = True
+                        print("\n\033[31mWARNING !\033[0m \033[34mPython Module will be running and may be doing some invisible actions\033[0m\n\n\033[34mDo you agree\033[0m  \033[32my/n ? (R To View Python Module)\033[0m\n")
                         answer = input("\n- ").strip()
                         if answer == "y" or answer == "Y" :
                             break
+                        if answer == "r" or answer == "R" :
+                            if os.path.isfile(plugin_location):
+                                with open(plugin_location) as mfp:
+                                    for line in mfp:
+                                        print(line)
+                            else:
+                                print("{} Not Found.".format(plugin_location))
+                            clear = False
                         elif answer == "n" or answer == "N":
                             exit__("\nBye...",0)
                     plugin__ = load_plugin(plugin_location)

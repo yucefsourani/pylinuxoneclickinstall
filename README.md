@@ -30,6 +30,9 @@ sudo update-desktop-database
 
 # or
 
+<a href="https://intradeus.github.io/http-protocol-redirector?r=pylinuxoneclick://apps/chromiumfreeworld.json" target="_blank">Install chromium  freeworld</a>
+<br>
+<br>
 <a href="https://intradeus.github.io/http-protocol-redirector?r=pylinuxoneclick://for_test_installfirefox.py" target="_blank">Install Firefox From Dnf</a>
 <br>
 <br>

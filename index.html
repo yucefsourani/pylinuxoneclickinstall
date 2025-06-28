@@ -213,10 +213,10 @@
                 const card = document.createElement('div');
                 card.className = 'app-card';
                 card.innerHTML = `
-                    <img src="${app.icon}" alt="${app.name} Icon">
+                    <img src="https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/refs/heads/main/icons/${app.icon}" alt="${app.name} Icon">
                     <h3>${app.name}</h3>
                     <p>${app.description}</p>
-                    <a href="${app.url}" target="_blank" rel="noopener noreferrer">تحميل</a>
+                    <a href="https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/refs/heads/main/plugins/${app.url}" target="_blank" rel="noopener noreferrer">تحميل</a>
                 `;
                 appGrid.appendChild(card);
             });

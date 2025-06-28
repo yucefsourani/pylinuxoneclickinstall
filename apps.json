@@ -3,14 +3,14 @@
     "name": "Firefox",
     "description": "Install Firefox From Dnf (json).",
     "icon": "appicns_Firefox.png",
-    "url": "pylinuxoneclick://plugins?installfirefox.json",
+    "url": "pylinuxoneclick://apps?installfirefox.json",
     "category": "Internet"
   },
   {
     "name": "Firefox",
     "description": "Install Firefox From Dnf (python).",
     "icon": "appicns_Firefox.png",
-    "url": "pylinuxoneclick://plugins?installfirefox.py",
+    "url": "pylinuxoneclick://apps?installfirefox.py",
     "category": "Internet"
   }
 ]

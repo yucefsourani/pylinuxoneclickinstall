@@ -139,7 +139,7 @@ def exit__(msg,code):
 if __name__ == "__main__" : 
     try:
         url = sys.argv[1]
-        real_url = os.path.join("https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/main",url.split(":",1)[1][2:].replace("?","/"))
+        real_url = os.path.join("https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/main/",url.split(":",1)[1][2:].replace("?","/"))
         with tempfile.TemporaryDirectory() as tmpdirname:
             print("Downloading {} Plugin...\n".format(real_url))
             plugin_location = downlaod(real_url,tmpdirname)

@@ -1,51 +1,9 @@
 [
   {
-    "name": "أداة إنتاجية",
-    "description": "وصف قصير لأداة تساعد على زيادة الإنتاجية.",
-    "icon": "https://placehold.co/100x100/7F56D9/FFFFFF/png?text=أداة",
-    "url": "#",
-    "category": "إنتاجية"
-  },
-  {
-    "name": "لعبة مغامرات",
-    "description": "استكشف عوالم جديدة في لعبة المغامرات هذه.",
-    "icon": "https://placehold.co/100x100/D92D20/FFFFFF/png?text=لعبة",
-    "url": "#",
-    "category": "ألعاب"
-  },
-  {
-    "name": "تطبيق اجتماعي",
-    "description": "تواصل مع أصدقائك وعائلتك بسهولة.",
-    "icon": "https://placehold.co/100x100/027A48/FFFFFF/png?text=اجتماعي",
-    "url": "#",
-    "category": "تواصل اجتماعي"
-  },
-  {
-    "name": "محرر صور",
-    "description": "أضف لمسات فنية على صورك مع هذا المحرر.",
-    "icon": "https://placehold.co/100x100/B54708/FFFFFF/png?text=صور",
-    "url": "#",
-    "category": "أدوات"
-  },
-  {
-    "name": "تطبيق رياضي",
-    "description": "تابع نتائج المباريات والأخبار الرياضية.",
-    "icon": "https://placehold.co/100x100/026AA2/FFFFFF/png?text=رياضة",
-    "url": "#",
-    "category": "أخبار"
-  },
-  {
-    "name": "لعبة استراتيجية",
-    "description": "خطط بحكمة وقد جيشك للنصر.",
-    "icon": "https://placehold.co/100x100/D92D20/FFFFFF/png?text=لعبة",
-    "url": "#",
-    "category": "ألعاب"
-  },
-  {
-    "name": "مدير المهام",
-    "description": "نظم مهامك اليومية مع هذا التطبيق البسيط.",
-    "icon": "https://placehold.co/100x100/7F56D9/FFFFFF/png?text=مهام",
-    "url": "#",
-    "category": "إنتاجية"
+    "name": "Firefox",
+    "description": "Install Firefox From Dnf.",
+    "icon": "appicns_Firefox.png",
+    "url": "pylinuxoneclick://plugins?installfirefox.json",
+    "category": "Internet"
   }
 ]

@@ -24,3 +24,6 @@ sudo update-desktop-database
  * xdg-utils
 
 
+# Apps Store
+
+https://yucefsourani.github.io/pylinuxoneclickinstall/

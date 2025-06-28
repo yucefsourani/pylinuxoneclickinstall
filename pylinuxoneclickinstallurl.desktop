@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=pylinuxoneclickurl
-Exec=xterm -e -bg Grey15  -fg white -maximized -fa 'Monospace' -fs 12 'pylinuxoneclickinstall.py  %U'
+Exec=xterm  -bg Grey15  -fg white -maximized -fa 'Monospace' -fs 12 -e 'pylinuxoneclickinstall.py  %U'
 Terminal=false
 NoDisplay=true
 MimeType=x-scheme-handler/pylinuxoneclick

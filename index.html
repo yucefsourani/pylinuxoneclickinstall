@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر التطبيقات</title>
+    <style>
+        /* --- CSS للتصميم --- */
+        :root {
+            --primary-color: #6941C6;
+            --light-gray: #f2f4f7;
+            --text-color: #344054;
+            --border-color: #eaecf0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        .search-container {
+            margin-bottom: 1.5rem;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        #category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-button {
+            padding: 8px 16px;
+            border: 1px solid var(--border-color);
+            background-color: #ffffff;
+            color: var(--text-color);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .nav-button:hover {
+            background-color: var(--light-gray);
+            border-color: #d0d5dd;
+        }
+        
+        .nav-button.active {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        #app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .app-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .app-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .app-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+        }
+
+        .app-card p {
+            margin: 0 0 15px 0;
+            font-size: 0.9rem;
+            color: #667085;
+            flex-grow: 1; /* يجعل الوصف يأخذ المساحة المتاحة */
+        }
+
+        .app-card a {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>متجر التطبيقات</h1>
+        </header>
+
+        <div class="search-container">
+            <input type="search" id="search-input" placeholder="ابحث عن تطبيق بالاسم أو الوصف...">
+        </div>
+
+        <nav id="category-nav">
+            </nav>
+
+        <main id="app-grid">
+            </main>
+    </div>
+
+    <script>
+    // --- JavaScript لجعل الصفحة تفاعلية ---
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const appGrid = document.getElementById('app-grid');
+        const categoryNav = document.getElementById('category-nav');
+        const searchInput = document.getElementById('search-input');
+        
+        let allApps = [];
+        let currentCategory = 'الكل';
+
+        // 1. جلب البيانات من ملف JSON
+        fetch('apps.json')
+            .then(response => response.json())
+            .then(data => {
+                allApps = data;
+                populateCategories();
+                displayApps(allApps);
+            })
+            .catch(error => {
+                console.error('Error fetching app data:', error);
+                appGrid.innerHTML = '<p>حدث خطأ أثناء تحميل التطبيقات.</p>';
+            });
+
+        // 2. إنشاء قائمة التصنيفات الديناميكية
+        function populateCategories() {
+            // استخراج التصنيفات الفريدة
+            const categories = ['الكل', ...new Set(allApps.map(app => app.category))];
+            
+            categoryNav.innerHTML = ''; // تفريغ القائمة قبل الإضافة
+
+            categories.forEach(category => {
+                const button = document.createElement('button');
+                button.className = 'nav-button';
+                button.textContent = category;
+                if (category === 'الكل') {
+                    button.classList.add('active');
+                }
+                button.addEventListener('click', () => {
+                    currentCategory = category;
+                    // تحديث الزر النشط
+                    document.querySelectorAll('.nav-button').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    filterAndDisplayApps();
+                });
+                categoryNav.appendChild(button);
+            });
+        }
+
+        // 3. عرض التطبيقات في الصفحة
+        function displayApps(appsToDisplay) {
+            appGrid.innerHTML = ''; // تفريغ الشبكة قبل العرض
+
+            if (appsToDisplay.length === 0) {
+                appGrid.innerHTML = '<p>لا توجد تطبيقات تطابق بحثك.</p>';
+                return;
+            }
+
+            appsToDisplay.forEach(app => {
+                const card = document.createElement('div');
+                card.className = 'app-card';
+                card.innerHTML = `
+                    <img src="${app.icon}" alt="${app.name} Icon">
+                    <h3>${app.name}</h3>
+                    <p>${app.description}</p>
+                    <a href="${app.url}" target="_blank" rel="noopener noreferrer">تحميل</a>
+                `;
+                appGrid.appendChild(card);
+            });
+        }
+
+        // 4. فلترة وعرض التطبيقات بناءً على البحث والتصنيف
+        function filterAndDisplayApps() {
+            let filteredApps = allApps;
+
+            // الفلترة حسب التصنيف
+            if (currentCategory !== 'الكل') {
+                filteredApps = filteredApps.filter(app => app.category === currentCategory);
+            }
+
+            // الفلترة حسب البحث
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            if (searchTerm) {
+                filteredApps = filteredApps.filter(app => 
+                    app.name.toLowerCase().includes(searchTerm) ||
+                    app.description.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            displayApps(filteredApps);
+        }
+
+        // 5. إضافة مستمع حدث للبحث الفوري
+        searchInput.addEventListener('input', filterAndDisplayApps);
+    });
+    </script>
+
+</body>
+</html>

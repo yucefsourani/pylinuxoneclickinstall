@@ -7,6 +7,13 @@
     "category": "Internet"
   },
   {
+    "name": "Firefox",
+    "description": "Install Firefox Web Browser Flatpak (json).",
+    "icon": "appicns_Firefox.png",
+    "url": "pylinuxoneclick://apps?installfirefoxflatpak.json",
+    "category": "Internet"
+  },
+  {
     "name": "Chromium freeworld",
     "description": "Install Chromium freeworld Web Browser (json).",
     "icon": "Chromium_logo.png",

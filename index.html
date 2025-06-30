@@ -11,6 +11,8 @@
             --light-gray: #f2f4f7;
             --text-color: #344054;
             --border-color: #eaecf0;
+            --dark-code-bg: #2d333b; /* لون خلفية مربع الكود */
+            --light-code-text: #c9d1d9; /* لون نص مربع الكود */
         }
 
         body {
@@ -130,7 +132,50 @@
             border-radius: 8px;
             font-weight: 500;
         }
+        .site-install {
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            width: 100%;
+        }
 
+        .site-install p {
+            margin: 0 0 1rem 0;
+        }
+
+        .site-install a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .site-install a:hover {
+            text-decoration: underline;
+        }
+
+        .code-box-container {
+            max-width: 600px;
+            margin: 1rem auto 0 auto;
+            text-align: left; /* لمحاذاة عنوان الصندوق */
+        }
+
+        .code-box-container p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .code-box pre {
+            background-color: var(--dark-code-bg);
+            color: var(--light-code-text);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto; /* لإضافة شريط تمرير أفقي إذا كان الكود طويلاً */
+            text-align: left; /* لمحاذاة الكود لليسار (مناسب للإنجليزية) */
+            direction: ltr; /* اتجاه النص من اليسار لليمين داخل الصندوق */
+            font-family: 'Courier New', Courier, monospace;
+        }
     </style>
 </head>
 <body>
@@ -139,7 +184,29 @@
         <header>
             <h1>Apps Store متجر التطبيقات</h1>
         </header>
+    <div class="site-install">
+        <p>
+Visit Project On 
+            <a href="https://github.com/yucefsourani/pylinuxoneclickinstall" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        </p>
+        
+        <div class="code-box-container">
+            <p>Install This Tool First</p>
+            <div class="code-box">
+<pre><code>cd ; git clone https://github.com/yucefsourani/pylinuxoneclickinstall
 
+cd ~/pylinuxoneclickinstall
+
+sudo cp pylinuxoneclickinstall.py /usr/bin
+
+sudo chmod 755 /usr/bin/pylinuxoneclickinstall.py
+
+sudo cp pylinuxoneclickinstallurl.desktop /usr/share/applications/
+
+sudo update-desktop-database</code></pre>
+            </div>
+        </div>
+    </div>
         <div class="search-container">
             <input type="search" id="search-input" placeholder="Search for App name/description...">
         </div>

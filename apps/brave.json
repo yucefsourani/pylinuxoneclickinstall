@@ -1,0 +1,8 @@
+{
+    "__arch__"           : ["all"],
+    "__distro__"         : ["fedora"],
+    "__distro_version__" : ["all"],
+    "__desktop__"        : ["all"],
+    "__commands__"       : ["echo -e '[brave-browser]\nname=Brave Browser\nbaseurl=https://brave-browser-rpm-release.s3.brave.com/$basearch\nenabled=1' > /etc/yum.repos.d/brave-browser.repo","rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc","dnf install brave-browser -y --best"]
+
+}

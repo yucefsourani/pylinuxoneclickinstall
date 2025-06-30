@@ -1,16 +1,37 @@
 [
   {
     "name": "Firefox",
-    "description": "Install Firefox From Dnf (json).",
+    "description": "Install Firefox Web Browser (json).",
     "icon": "appicns_Firefox.png",
     "url": "pylinuxoneclick://apps?installfirefox.json",
     "category": "Internet"
   },
   {
     "name": "Chromium freeworld",
-    "description": "Install Chromium freeworld (json).",
+    "description": "Install Chromium freeworld Web Browser (json).",
     "icon": "Chromium_logo.png",
     "url": "pylinuxoneclick://apps?chromiumfreeworld.json",
+    "category": "Internet"
+  },
+  {
+    "name": "Opera",
+    "description": "Install Opera Web Browser (json).",
+    "icon": "Opera-logo-256x256.png",
+    "url": "pylinuxoneclick://apps?opera.json",
+    "category": "Internet"
+  },
+  {
+    "name": "Vivaldi",
+    "description": "Install Vivaldi Web Browser (json).",
+    "icon": "vivaldi.png",
+    "url": "pylinuxoneclick://apps?vivaldi.json",
+    "category": "Internet"
+  },
+  {
+    "name": "Brave",
+    "description": "Install Brave Web Browser (json).",
+    "icon": "brave.png",
+    "url": "pylinuxoneclick://apps?brave.json",
     "category": "Internet"
   }
 ]

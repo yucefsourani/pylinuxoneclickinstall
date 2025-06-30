@@ -7,10 +7,10 @@
     "category": "Internet"
   },
   {
-    "name": "Firefox",
-    "description": "Install Firefox From Dnf (python).",
-    "icon": "appicns_Firefox.png",
-    "url": "pylinuxoneclick://apps?installfirefox.py",
+    "name": "Chromium freeworld",
+    "description": "Install Chromium freeworld (json).",
+    "icon": "Chromium_logo.png",
+    "url": "pylinuxoneclick://apps?chromiumfreeworld.json",
     "category": "Internet"
   }
 ]

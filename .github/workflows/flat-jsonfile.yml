@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p out
           echo "[" > out/apps.json
-          find data -name '*.json' -type f -print0 | sort -z | xargs -0 jq -s '. | add' >> out/apps.json
+          find data -iname '*.json' -type f -print0  | xargs -0 jq -s '.' > out/apps.json
           echo "]" >> out/apps.json
           # The above creates a double array, so we fix it below:
           # Replace "[[" with "[" and "]]" with "]"

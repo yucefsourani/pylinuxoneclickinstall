@@ -1,3 +1,9 @@
 [
-null
+{
+  "name": "Vivaldi",
+  "description": "Install Vivaldi Web Browser (json).",
+  "icon": "vivaldi.png",
+  "url": "pylinuxoneclick://apps?vivaldi.json",
+  "category": "Internet"
+}
 ]

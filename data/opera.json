@@ -1,0 +1,7 @@
+{
+    "name": "Opera",
+    "description": "Install Opera Web Browser (json).",
+    "icon": "Opera-logo-256x256.png",
+    "url": "pylinuxoneclick://apps?opera.json",
+    "category": "Internet"
+}

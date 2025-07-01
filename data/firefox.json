@@ -1,0 +1,7 @@
+{
+    "name": "Firefox",
+    "description": "Install Firefox Web Browser (json).",
+    "icon": "appicns_Firefox.png",
+    "url": "pylinuxoneclick://apps?installfirefox.json",
+    "category": "Internet"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Firefox",
+    "description": "Install Firefox Web Browser Flatpak (json).",
+    "icon": "appicns_Firefox.png",
+    "url": "pylinuxoneclick://apps?installfirefoxflatpak.json",
+    "category": "Internet"
+}

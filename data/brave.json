@@ -1,0 +1,7 @@
+{
+    "name": "Brave",
+    "description": "Install Brave Web Browser (json).",
+    "icon": "brave.png",
+    "url": "pylinuxoneclick://apps?brave.json",
+    "category": "Internet"
+}

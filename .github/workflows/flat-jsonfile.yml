@@ -23,7 +23,6 @@ jobs:
           mkdir -p out
           echo "[" > out/apps.json
           find data -iname '*.json' -type f -print0  | xargs -0 jq -s '.' > out/apps.json
-          echo "]" >> out/apps.json
           # The above creates a double array, so we fix it below:
           # Replace "[[" with "[" and "]]" with "]"
           sed -i 's/^\[\[/\[/;s/\]\]$/\]/' out/apps.json

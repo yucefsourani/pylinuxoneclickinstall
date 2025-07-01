@@ -1,0 +1,38 @@
+name: Flatten JSON files
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/*.json'
+
+jobs:
+  flatten-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Flatten JSON files in data/ to app.json
+        run: |
+          mkdir -p out
+          echo "[" > out/app.json
+          find data -name '*.json' -type f -print0 | sort -z | xargs -0 cat | jq -s '. | add' >> out/app.json
+          echo "]" >> out/app.json
+          # The above creates a double array, so we fix it below:
+          # Replace "[[" with "[" and "]]" with "]"
+          sed -i 's/^\[\[/\[/;s/\]\]$/\]/' out/app.json
+
+      - name: Move app.json to repo root
+        run: mv out/app.json app.json
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: flatten JSON files into app.json"
+          file_pattern: 'app.json'

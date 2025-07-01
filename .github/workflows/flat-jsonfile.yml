@@ -18,21 +18,21 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Flatten JSON files in data/ to app.json
+      - name: Flatten JSON files in data/ to apps.json
         run: |
           mkdir -p out
-          echo "[" > out/app.json
-          find data -name '*.json' -type f -print0 | sort -z | xargs -0 cat | jq -s '. | add' >> out/app.json
-          echo "]" >> out/app.json
+          echo "[" > out/apps.json
+          find data -name '*.json' -type f -print0 | sort -z | xargs -0 cat | jq -s '. | add' >> out/apps.json
+          echo "]" >> out/apps.json
           # The above creates a double array, so we fix it below:
           # Replace "[[" with "[" and "]]" with "]"
-          sed -i 's/^\[\[/\[/;s/\]\]$/\]/' out/app.json
+          sed -i 's/^\[\[/\[/;s/\]\]$/\]/' out/apps.json
 
-      - name: Move app.json to repo root
-        run: mv out/app.json app.json
+      - name: Move apps.json to repo root
+        run: mv out/apps.json apps.json
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: flatten JSON files into app.json"
-          file_pattern: 'app.json'
+          commit_message: "chore: flatten JSON files into apps.json"
+          file_pattern: 'apps.json'

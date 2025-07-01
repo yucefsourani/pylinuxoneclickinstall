@@ -228,6 +228,7 @@ sudo update-desktop-database</code></pre>
         
         let allApps = [];
         let currentCategory = 'All';
+        let info_link = "";
 
         // 1. جلب البيانات من ملف JSON
         fetch('apps.json')
@@ -277,6 +278,7 @@ sudo update-desktop-database</code></pre>
             }
 
             appsToDisplay.forEach(app => {
+                info_link  = "https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/refs/heads/main/" + app.url.trim().replace("?", "/").split("//")[1]
                 const card = document.createElement('div');
                 card.className = 'app-card';
                 card.innerHTML = `
@@ -284,6 +286,7 @@ sudo update-desktop-database</code></pre>
                     <h3>${app.name}</h3>
                     <p>${app.description}</p>
                     <a href="${app.url}" target="_blank" rel="noopener noreferrer">Install</a>
+                    <a href="${info_link}" target="_blank" rel="noopener noreferrer">Detail</a>
                 `;
                 appGrid.appendChild(card);
             });

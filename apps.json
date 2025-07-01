@@ -28,6 +28,13 @@
     "category": "Internet"
   },
   {
+    "name": "Albasheer",
+    "description": "Electronic Quran Browser Flatpak (json).",
+    "icon": "albasheer-128.png",
+    "url": "pylinuxoneclick://apps?albasheer.json",
+    "category": "Education"
+  },
+  {
     "name": "Firefox",
     "description": "Install Firefox Web Browser (json).",
     "icon": "appicns_Firefox.png",

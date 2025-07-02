@@ -4,7 +4,10 @@
     "description": "Install Brave Web Browser (json).",
     "icon": "brave.png",
     "url": "pylinuxoneclick://apps?brave.json",
-    "category": "Internet"
+    "category": "Internet",
+    "__distro__": [
+      "Fedora"
+    ]
   },
   {
     "name": "Arduino IDE",

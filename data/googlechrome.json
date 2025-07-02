@@ -3,5 +3,6 @@
     "description": "Install Google Chrome Web Browser (json).",
     "icon": "Chrome.png",
     "url": "pylinuxoneclick://apps?googlechrome.json",
-    "category": "Internet"
+    "category": "Internet",
+    "__distro__": ["Fedora"]
 }

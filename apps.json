@@ -80,6 +80,9 @@
     "description": "Install Chromium freeworld Web Browser (json).",
     "icon": "Chromium_logo.png",
     "url": "pylinuxoneclick://apps?chromiumfreeworld.json",
-    "category": "Internet"
+    "category": "Internet",
+    "__distro__": [
+      "Fedora"
+    ]
   }
 ]

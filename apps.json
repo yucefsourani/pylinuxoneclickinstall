@@ -7,6 +7,13 @@
     "category": "Internet"
   },
   {
+    "name": "Arduino IDE",
+    "description": "Open-source electronics prototyping platform Flatpak (json).",
+    "icon": "arduino.svg",
+    "url": "pylinuxoneclick://apps?arduinoide.json",
+    "category": "Developer"
+  },
+  {
     "name": "Firefox",
     "description": "Install Firefox Web Browser Flatpak (json).",
     "icon": "appicns_Firefox.png",

@@ -11,7 +11,10 @@
     "description": "Open-source electronics prototyping platform Flatpak (json).",
     "icon": "arduino.svg",
     "url": "pylinuxoneclick://apps?arduinoide.json",
-    "category": "Developer"
+    "category": "Developer",
+    "__distro__": [
+      "All"
+    ]
   },
   {
     "name": "Firefox",
@@ -32,7 +35,10 @@
     "description": "Open-source electronics prototyping platform Flatpak (json).",
     "icon": "arduino.svg",
     "url": "pylinuxoneclick://apps?arduinoide2.json",
-    "category": "Developer"
+    "category": "Developer",
+    "__distro__": [
+      "All"
+    ]
   },
   {
     "name": "Opera",

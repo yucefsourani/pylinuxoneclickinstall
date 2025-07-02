@@ -34,7 +34,10 @@
     "description": "Install Vivaldi Web Browser (json).",
     "icon": "vivaldi.png",
     "url": "pylinuxoneclick://apps?vivaldi.json",
-    "category": "Internet"
+    "category": "Internet",
+    "__distro__": [
+      "Fedora"
+    ]
   },
   {
     "name": "Arduino IDE V2",
@@ -51,7 +54,10 @@
     "description": "Install Opera Web Browser (json).",
     "icon": "Opera-logo-256x256.png",
     "url": "pylinuxoneclick://apps?opera.json",
-    "category": "Internet"
+    "category": "Internet",
+    "__distro__": [
+      "Fedora"
+    ]
   },
   {
     "name": "Albasheer",
@@ -79,7 +85,10 @@
     "description": "Install Google Chrome Web Browser (json).",
     "icon": "Chrome.png",
     "url": "pylinuxoneclick://apps?googlechrome.json",
-    "category": "Internet"
+    "category": "Internet",
+    "__distro__": [
+      "Fedora"
+    ]
   },
   {
     "name": "Chromium freeworld",

@@ -176,6 +176,30 @@
             direction: ltr; /* اتجاه النص من اليسار لليمين داخل الصندوق */
             font-family: 'Courier New', Courier, monospace;
         }
+    .heart {
+          position: relative;
+          width: 10px;
+          height: 10px;
+    	  margin-right:1.5%;
+        }
+        .heart:before,
+        .heart:after {
+          position: absolute;
+          content: "";
+          left: 12.5px;
+          top: 0;
+          width: 12.5px;
+          height: 20px;
+          background: red;
+          border-radius: 12.5px 12.5px 0 0;
+          transform: rotate(-45deg);
+          transform-origin: 0 100%;
+        }
+        .heart:after {
+          left: 0;
+          transform: rotate(45deg);
+          transform-origin: 100% 100%;
+        }
     </style>
 </head>
 <body>

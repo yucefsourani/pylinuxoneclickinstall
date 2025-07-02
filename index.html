@@ -310,13 +310,13 @@ sudo update-desktop-database</code></pre>
                     <p>${app.description}</p>
                     <a href="${app.url}" target="_blank" rel="noopener noreferrer">Install</a>
                     <a href="${info_link}" target="_blank" rel="noopener noreferrer" style="margin-top:2%;">Detail</a>
-                    <div style="margin-top:2%;"><p><span class="heart"></span>
+                    <div style="margin-top:2%;"><span class="heart"></span>
                 `;
                 app.__distro__.forEach(distro => {
                    card.innerHTML += distro + ' ';
                     
                 });
-                card.innerHTML += '</p></div>';
+                card.innerHTML += '</div>';
                 appGrid.appendChild(card);
             });
         }

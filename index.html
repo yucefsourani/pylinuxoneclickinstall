@@ -180,7 +180,7 @@
           position: relative;
           width: 10px;
           height: 10px;
-          margin-right:1.5%;
+    	  margin-right : 2.1%;
         }
         .heart:before,
         .heart:after {
@@ -200,6 +200,16 @@
           transform: rotate(45deg);
           transform-origin: 100% 100%;
         }
+.child_h{
+    color : white;
+    margin: 0;
+    padding: 0;
+	margin-right:0.5%;
+	margin-left:1.5%;
+	padding : 0.1%;
+	background : red;
+	border-radius : 5px;
+}
     </style>
 </head>
 <body>
@@ -311,10 +321,10 @@ sudo update-desktop-database</code></pre>
                     <p>${app.description}</p>
                     <a href="${app.url}" target="_blank" rel="noopener noreferrer">Install</a>
                     <a href="${info_link}" target="_blank" rel="noopener noreferrer" style="margin-top:2%;">Detail</a>
-                    <div style="margin-top:2%;"><span class="heart"></span>
+                    <div style="display: flex;"><div class="heart"></div>
                 `;
                 app.__distro__.forEach(distro => {
-                   card.innerHTML += distro + ' ';
+                   card.innerHTML += '<div class="child_h">'+distro+'</div>';
                     
                 });
                 card.innerHTML += '</div>';

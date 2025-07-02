@@ -46,7 +46,11 @@
     "description": "Electronic Quran Browser Flatpak (json).",
     "icon": "albasheer-128.png",
     "url": "pylinuxoneclick://apps?albasheer.json",
-    "category": "Education"
+    "category": "Education",
+    "__distro__": [
+      "All",
+      "Fedora"
+    ]
   },
   {
     "name": "Firefox",

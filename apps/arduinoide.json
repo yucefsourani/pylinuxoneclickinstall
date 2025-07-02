@@ -1,0 +1,8 @@
+{
+    "__arch__"           : ["all"],
+    "__distro__"         : ["all"],
+    "__distro_version__" : ["all"],
+    "__desktop__"        : ["all"],
+    "__commands__"       : ["flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo --user","flatpak --user install flathub cc.arduino.arduinoide -y"]
+
+}

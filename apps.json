@@ -31,7 +31,7 @@
     "name": "Arduino IDE V2",
     "description": "Open-source electronics prototyping platform Flatpak (json).",
     "icon": "arduino.svg",
-    "url": "pylinuxoneclick://apps?arduinoidev2.json",
+    "url": "pylinuxoneclick://apps?arduinoide2.json",
     "category": "Developer"
   },
   {

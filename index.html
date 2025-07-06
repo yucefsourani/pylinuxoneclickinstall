@@ -200,15 +200,13 @@
           transform: rotate(45deg);
           transform-origin: 100% 100%;
         }
-.child_h{
-    color : white;
-    margin: 0;
-    padding: 0;
-	margin-right:0.5%;
-	margin-left:1.5%;
-	padding : 0.1%;
-	border-radius : 5px;
-}
+    .child_h {
+        color : white;
+        background-color:Tomato ;
+        padding : 1%;
+        margin-bottom: 0.5%;
+
+    }
     </style>
 </head>
 <body>
@@ -324,19 +322,22 @@ sudo update-desktop-database</code></pre>
                 info_link  = "https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/refs/heads/main/" + app.url.trim().replace("?", "/").split("//")[1]
                 const card = document.createElement('div');
                 card.className = 'app-card';
+                const randomColor = getRandomHexColor();
                 card.innerHTML = `
                     <img src="https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/refs/heads/main/icons/${app.icon}" alt="${app.name} Icon">
                     <h3>${app.name}</h3>
                     <p>${app.description}</p>
                     <a href="${app.url}" target="_blank" rel="noopener noreferrer">Install</a>
                     <a href="${info_link}" target="_blank" rel="noopener noreferrer" style="margin-top:2%;">Detail</a>
-                `;
+                    <div style="display: flex;flex-wrap: nowrap;margin-top:0.5%">
+                `;        
+        
                 app.__distro__.forEach(distro => {
-		   const randomColor = getRandomHexColor();
-                   card.innerHTML += '<div style="background:${randomColor};">'+distro+'</div>';
+		           
+                   card.innerHTML += `<div class="child_h">${distro}</div>`;
                     
                 });
-                card.innerHTML += '</div>';
+                card.innerHTML += `</div>`;
                 appGrid.appendChild(card);
             });
         }

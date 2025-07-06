@@ -207,7 +207,6 @@
 	margin-right:0.5%;
 	margin-left:1.5%;
 	padding : 0.1%;
-	background : red;
 	border-radius : 5px;
 }
     </style>
@@ -254,6 +253,16 @@ sudo update-desktop-database</code></pre>
 
     <script>
     // --- JavaScript لجعل الصفحة تفاعلية ---
+    function getRandomHexColor() {
+      // Generate a random number between 0 and 16777215 (0xFFFFFF in decimal)
+      const randomNum = Math.floor(Math.random() * 16777215);
+      // Convert the number to a hexadecimal string
+      let hexColor = randomNum.toString(16);
+      // Pad the string with leading zeros if necessary to ensure 6 characters
+      hexColor = hexColor.padStart(6, '0');
+      // Prepend '#' to form a valid CSS color code
+      return '#' + hexColor;
+    }
 
     document.addEventListener('DOMContentLoaded', () => {
         const appGrid = document.getElementById('app-grid');
@@ -321,10 +330,10 @@ sudo update-desktop-database</code></pre>
                     <p>${app.description}</p>
                     <a href="${app.url}" target="_blank" rel="noopener noreferrer">Install</a>
                     <a href="${info_link}" target="_blank" rel="noopener noreferrer" style="margin-top:2%;">Detail</a>
-                    <div style="display: flex;"><div class="heart"></div>
                 `;
                 app.__distro__.forEach(distro => {
-                   card.innerHTML += '<div class="child_h">'+distro+'</div>';
+		   const randomColor = getRandomHexColor();
+                   card.innerHTML += '<div style="background:${randomColor};">'+distro+'</div>';
                     
                 });
                 card.innerHTML += '</div>';

@@ -10,6 +10,17 @@
     ]
   },
   {
+    "name": "Ciano",
+    "description": "A multimedia file converter Flatpak (json).",
+    "icon": "ciano.png",
+    "url": "pylinuxoneclick://apps?ciano.json",
+    "category": "Multimedia",
+    "__distro__": [
+      "all",
+      "Fedora"
+    ]
+  },
+  {
     "name": "Arduino IDE",
     "description": "Open-source electronics prototyping platform Flatpak (json).",
     "icon": "arduino.svg",

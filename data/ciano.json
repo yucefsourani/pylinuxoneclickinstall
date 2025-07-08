@@ -4,5 +4,5 @@
     "icon": "ciano.png",
     "url": "pylinuxoneclick://apps?ciano.json",
     "category": "Multimedia",
-    "__distro__": ["All","Fedora"]
+    "__distro__": ["All"]
 }

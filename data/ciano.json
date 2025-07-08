@@ -1,0 +1,8 @@
+{
+    "name": "Ciano",
+    "description": "A multimedia file converter Flatpak (json).",
+    "icon": "ciano.png",
+    "url": "pylinuxoneclick://apps?ciano.json",
+    "category": "Multimedia",
+    "__distro__": ["all","Fedora"]
+}

@@ -37,6 +37,7 @@
     "url": "pylinuxoneclick://apps?installfirefoxflatpak.json",
     "category": "Internet",
     "__distro__": [
+      "All",
       "Fedora"
     ]
   },

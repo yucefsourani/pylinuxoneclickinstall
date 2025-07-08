@@ -4,5 +4,5 @@
     "icon": "albasheer-128.png",
     "url": "pylinuxoneclick://apps?albasheer.json",
     "category": "Education",
-    "__distro__": ["All","Fedora"]
+    "__distro__": ["All"]
 }

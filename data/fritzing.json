@@ -1,0 +1,8 @@
+{
+    "name": "Fritzing",
+    "description": "Electronic Design Tool Flatpak (json).",
+    "icon": "52b1e48a757b7f28448b4567.png",
+    "url": "pylinuxoneclick://apps?fritzing.json",
+    "category": "Developer",
+    "__distro__": ["All"]
+}

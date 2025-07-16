@@ -1,0 +1,8 @@
+{
+    "name": "XFCE Video thumbnails",
+    "description": "XFCE File Manager video thumbnails (json).",
+    "icon": "1200px-Thunar.svg.png",
+    "url": "pylinuxoneclick://apps?ffmpegthumbs_fedora_xfce.json",
+    "category": "System",
+    "__distro__": ["Fedora","XFCE"]
+}

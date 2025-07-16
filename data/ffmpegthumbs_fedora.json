@@ -1,0 +1,8 @@
+{
+    "name": "Plasma Video thumbnails",
+    "description": "KDE Plasma File Manager video thumbnails (json).",
+    "icon": "81dz0FkILtL.png",
+    "url": "pylinuxoneclick://apps?ffmpegthumbs_fedora.json",
+    "category": "System",
+    "__distro__": ["Fedora","KDE plasma"]
+}

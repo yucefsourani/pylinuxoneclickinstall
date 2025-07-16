@@ -56,7 +56,7 @@
     "url": "pylinuxoneclick://apps?albasheer.json",
     "category": "Education",
     "__distro__": [
-      "All"
+      "Flatpak"
     ]
   },
   {

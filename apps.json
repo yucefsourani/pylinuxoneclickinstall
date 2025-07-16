@@ -10,16 +10,6 @@
     ]
   },
   {
-    "name": "Vlc",
-    "description": "VLC media player, the open-source multimedia player (json).",
-    "icon": "vlc-player-logo.png",
-    "url": "pylinuxoneclick://apps?vlc.json",
-    "category": "Multimedia",
-    "__distro__": [
-      "Fedora"
-    ]
-  },
-  {
     "name": "Google Chrome",
     "description": "Install Google Chrome Web Browser (json).",
     "icon": "Chrome.png",
@@ -209,6 +199,16 @@
     "category": "Developer",
     "__distro__": [
       "Flatpak"
+    ]
+  },
+  {
+    "name": "Vlc",
+    "description": "VLC media player, the open-source multimedia player (json).",
+    "icon": "vlc-player-logo.png",
+    "url": "pylinuxoneclick://apps?vlc.json",
+    "category": "Multimedia",
+    "__distro__": [
+      "Fedora"
     ]
   },
   {

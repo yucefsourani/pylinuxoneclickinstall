@@ -193,35 +193,39 @@ if __name__ == "__main__" :
                     if desktop != "None":
                         if "all" not in desktop  and not any([True for i in desktop if distro_desktop  in i]):
                             exit__("\nThis Module Support This Desktop '{}' Only .\n".format(desktop),7)
-
+                    
+                    nothing_to_do = False 
                     if run_rollback_commands:
                         commands = plugin__["__rollback_commands__"].copy()
                     else:
                         commands = plugin__["__run_task_commands__"].copy()
                     if not commands:
+                        nothing_to_do = True
                         commands.append("\nNothing To Do.\n")
                     commands.append("echo Press any key to exit.")
                     commands.append("read")
                     
                     file_to_run = write_to_tmp(commands)
-                    while True:
-                        os.system("clear")
-                        print("\n"+real_url+"\n")
-                        print("\nCommands To Run y/n ?\n")
-                        count = 1
-                        if run_rollback_commands:
-                            for i in plugin__["__rollback_commands__"]:
-                                print("[Command {}]- {}".format(count,i))
-                                count += 1
-                        else:
-                            for i in plugin__["__run_task_commands__"]:
-                                print("[Command {}]- {}".format(count,i))
-                                count += 1
-                        answer = input("\n- ").strip()
-                        if answer == "y" or answer == "Y" :
-                            break
-                        elif answer == "n" or answer == "N":
-                            exit__("\nBye...",0)
+                    if not nothing_to_do:
+                        while True:
+                            os.system("clear")
+                            print("\n"+real_url+"\n")
+                            print("\nCommands To Run y/n ?\n")
+                            count = 1
+                            if run_rollback_commands:
+                                for i in plugin__["__rollback_commands__"]:
+                                    print("[Command {}]- {}".format(count,i))
+                                    count += 1
+                            else:
+                                for i in plugin__["__run_task_commands__"]:
+                                    print("[Command {}]- {}".format(count,i))
+                                    count += 1
+                            if 
+                            answer = input("\n- ").strip()
+                            if answer == "y" or answer == "Y" :
+                                break
+                            elif answer == "n" or answer == "N":
+                                exit__("\nBye...",0)
 
                     if subprocess.call("bash -c '{}'".format(file_to_run),shell=True) != 0 :
                         exit__("\nTask Fail.\n",1)

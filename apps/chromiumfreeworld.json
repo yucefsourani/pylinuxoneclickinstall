@@ -4,6 +4,6 @@
     "__distro_version__" : ["all"],
     "__desktop__"        : ["all"],
     "__run_task_commands__"       : ["sudo dnf install  --best -y --nogpgcheck  http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm","sudo dnf install chromium-freeworld -y"],
-    "__rollback_commands__" : []
+    "__rollback_commands__" : ["sudo rpm -v --nodeps -e chromium-freeworld"]
 
 }

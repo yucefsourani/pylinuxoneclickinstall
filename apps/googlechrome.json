@@ -4,6 +4,6 @@
     "__distro_version__" : ["all"],
     "__desktop__"        : ["all"],
     "__run_task_commands__"       : ["echo -e '[google-chrome]\nname=google-chrome\nbaseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64\nenabled=1\ngpgcheck=1\ngpgkey=https://dl.google.com/linux/linux_signing_key.pub' |sudo tee  /etc/yum.repos.d/google-chrome.repo","sudo dnf install google-chrome-stable -y --best"],
-    "__rollback_commands__" : []
+    "__rollback_commands__" : ["sudo rpm --nodeps -e google-chrome-stable"]
 
 }

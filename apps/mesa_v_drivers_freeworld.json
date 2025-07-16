@@ -4,6 +4,6 @@
     "__distro_version__" : ["all"],
     "__desktop__"        : ["all"],
     "__run_task_commands__"       : ["sudo dnf install  --best -y --nogpgcheck  http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm","if [[ $(rpm -q mesa-va-drivers) == 'package mesa-va-drivers is not installed' ]];then sudo dnf install mesa-va-drivers-freeworld -y --best ;else sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld -y --best;fi","if [[ $(rpm -q mesa-vdpau-drivers) == 'package mesa-vdpau-drivers is not installed' ]];then sudo dnf install mesa-vdpau-drivers-freeworld -y --best ;else sudo dnf swap mesa-vdpau-drivers  mesa-vdpau-drivers-freeworld -y --best;fi"],
-    "__rollback_commands__" : []
+    "__rollback_commands__" : ["if [[ $(rpm -q mesa-va-drivers-freeworld) == 'package mesa-va-drivers-freeworld is not installed' ]];then sudo dnf install mesa-va-drivers -y --best ;else sudo dnf swap mesa-va-drivers-freeworld mesa-va-drivers  -y --best;fi","if [[ $(rpm -q mesa-vdpau-drivers-freeworld) == 'package mesa-vdpau-drivers-freeworld is not installed' ]];then sudo dnf install mesa-vdpau-driver -y --best ;else sudo dnf swap  mesa-vdpau-drivers-freeworld mesa-vdpau-drivers   -y --best;fi"]
 
 }

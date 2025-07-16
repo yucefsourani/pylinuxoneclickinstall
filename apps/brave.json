@@ -4,6 +4,6 @@
     "__distro_version__" : ["all"],
     "__desktop__"        : ["all"],
     "__run_task_commands__"       : ["echo -e '[brave-browser]\nname=Brave Browser\nbaseurl=https://brave-browser-rpm-release.s3.brave.com/$basearch\nenabled=1' | sudo tee /etc/yum.repos.d/brave-browser.repo","sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc","sudo dnf install brave-browser -y --best"],
-    "__rollback_commands__" : []
+    "__rollback_commands__" : ["sudo rpm --nodeps -e brave-browser"]
 
 }

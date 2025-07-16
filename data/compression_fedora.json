@@ -6,5 +6,5 @@
     "category": "Utils",
     "__distro__": ["Fedora"],
     "run_task_buttonlabel" : "Install",
-    "rollback_buttonlabel" : "Remove"
+    "rollback_buttonlabel" : ""
 }

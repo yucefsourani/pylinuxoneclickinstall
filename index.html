@@ -333,13 +333,14 @@ Visit Project On
                 const card = document.createElement('div');
                 card.className = 'app-card';
                 const randomColor = getRandomHexColor();
+                const rollback_button = app.rollback_buttonlabel  ?  `<a href="${app.url}#" target="_blank" rel="noopener noreferrer" class="right">${app.rollback_buttonlabel}</a>` : `<a href="#" target="_blank" rel="noopener noreferrer" style="pointer-events: none;" class="right">Not Available</a>` ;
                 card.innerHTML = `
                     <img src="https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/refs/heads/main/icons/${app.icon}" alt="${app.name} Icon">
                     <h3>${app.name}</h3>
                     <p>${app.description}</p>
                     <div class="installremovebuttoncontainer">
                         <a href="${app.url}" target="_blank" rel="noopener noreferrer" class="left">${app.run_task_buttonlabel}</a>
-                        <a href="${app.url}#" target="_blank" rel="noopener noreferrer" class="right">${app.rollback_buttonlabel}</a>
+                        ${rollback_button}
                     </div>
                     <a href="${info_link}" target="_blank" rel="noopener noreferrer" style="margin-top:2%;background-color: var(--primary-color);">Detail</a>
                     <div style="display: flex;flex-wrap: nowrap;margin-top:0.5%">

@@ -3,6 +3,7 @@
     "__distro__"         : ["fedora"],
     "__distro_version__" : ["all"],
     "__desktop__"        : ["all"],
-    "__commands__"       : ["sudo dnf install zip p7zip gzip cpio unar p7zip-plugins -y --best"]
+    "__run_task_commands__"       : ["sudo dnf install zip p7zip gzip cpio unar p7zip-plugins -y --best"],
+    "__rollback_commands__" : []
 
 }

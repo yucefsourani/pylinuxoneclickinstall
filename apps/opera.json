@@ -3,6 +3,7 @@
     "__distro__"         : ["fedora"],
     "__distro_version__" : ["all"],
     "__desktop__"        : ["all"],
-    "__commands__"       : ["echo  -e  '[opera]\nname=Opera packages\ntype=rpm-md\nbaseurl=https://rpm.opera.com/rpm\ngpgcheck=1\ngpgkey=https://rpm.opera.com/rpmrepo.key\nenabled=1'  |sudo tee  /etc/yum.repos.d/opera.repo","sudo dnf install opera-stable -y --best"]
+    "__run_task_commands__"       : ["echo  -e  '[opera]\nname=Opera packages\ntype=rpm-md\nbaseurl=https://rpm.opera.com/rpm\ngpgcheck=1\ngpgkey=https://rpm.opera.com/rpmrepo.key\nenabled=1'  |sudo tee  /etc/yum.repos.d/opera.repo","sudo dnf install opera-stable -y --best"],
+    "__rollback_commands__" : []
 
 }

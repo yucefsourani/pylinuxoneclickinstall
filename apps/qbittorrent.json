@@ -3,6 +3,7 @@
     "__distro__"         : ["fedora"],
     "__distro_version__" : ["all"],
     "__desktop__"        : ["all"],
-    "__commands__"       : ["sudo dnf install qbittorrent -y"]
+    "__run_task_commands__"       : ["sudo dnf install qbittorrent -y"],
+    "__rollback_commands__" : []
 
 }

@@ -3,6 +3,7 @@
     "__distro__"         : ["fedora"],
     "__distro_version__" : ["all"],
     "__desktop__"        : ["xfce"],
-    "__commands__"       : ["sudo dnf install  --best -y --nogpgcheck  http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm","sudo dnf install tumbler tumbler-extras ffmpegthumbnailer -y --best"]
+    "__run_task_commands__"       : ["sudo dnf install  --best -y --nogpgcheck  http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm","sudo dnf install tumbler tumbler-extras ffmpegthumbnailer -y --best"],
+    "__rollback_commands__" : []
 
 }

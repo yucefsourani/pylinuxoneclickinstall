@@ -5,5 +5,6 @@
     "url": "pylinuxoneclick://apps?fritzing.json",
     "category": "Developer",
     "__distro__": ["Flatpak"],
-    "buttonlabel" : "Install"
+    "buttonlabel" : "Install",
+    "rollback_buttonlabel" : "Remove"
 }

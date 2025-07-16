@@ -125,11 +125,9 @@
         }
 
         .app-card a {
-            background-color: var(--primary-color);
             color: #ffffff;
             text-decoration: none;
             padding: 10px 20px;
-            border-radius: 8px;
             font-weight: 500;
         }
         .site-install {
@@ -206,6 +204,25 @@
         padding : 1%;
         margin-bottom: 0.5%;
 
+    }
+    
+    .installremovebuttoncontainer {
+      display: flex; /* تجعل العناصر الداخلية تتوزع بشكل مرن */
+      justify-content: center; /* توسط العناصر في المنتصف أفقيًا */
+      align-items: center; /* توسط العناصر في المنتصف عموديًا */
+    }
+
+
+    /* برم العنصر الأيسر من جهة اليسار */
+    .left {
+      background-color: var(--primary-color);
+      border-right: 0.1px solid #ffffff; 
+    }
+
+    /* برم العنصر الأيمن من جهة اليمين */
+    .right {
+      background-color: Crimson;
+      border-left: 0.1px solid #ffffff; 
     }
     </style>
 </head>
@@ -320,8 +337,11 @@ Visit Project On
                     <img src="https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/refs/heads/main/icons/${app.icon}" alt="${app.name} Icon">
                     <h3>${app.name}</h3>
                     <p>${app.description}</p>
-                    <a href="${app.url}" target="_blank" rel="noopener noreferrer">${app.buttonlabel}</a>
-                    <a href="${info_link}" target="_blank" rel="noopener noreferrer" style="margin-top:2%;">Detail</a>
+                    <div class="installremovebuttoncontainer">
+                        <a href="${app.url}" target="_blank" rel="noopener noreferrer" class="left">${app.run_task_buttonlabel}</a>
+                        <a href="${app.url}#" target="_blank" rel="noopener noreferrer" class="right">${app.rollback_buttonlabel}</a>
+                    </div>
+                    <a href="${info_link}" target="_blank" rel="noopener noreferrer" style="margin-top:2%;background-color: var(--primary-color);">Detail</a>
                     <div style="display: flex;flex-wrap: nowrap;margin-top:0.5%">
                 `;        
         

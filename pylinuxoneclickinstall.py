@@ -138,8 +138,13 @@ def exit__(msg,code):
 
 if __name__ == "__main__" : 
     try:
-        url = sys.argv[1]
+        #url = sys.argv[1]
+        url = "pylinuxoneclick://apps?albasheer.json"
+        run_rollback_commands = False
         real_url = os.path.join("https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/main/",url.split(":",1)[1][2:].replace("?","/"))
+        if real_url.endswith("#"):
+            real_url = real_url[:-1]
+            run_rollback_commands = True
         with tempfile.TemporaryDirectory() as tmpdirname:
             print("Downloading {} Plugin...\n".format(real_url))
             plugin_location = downlaod(real_url,tmpdirname)
@@ -189,20 +194,30 @@ if __name__ == "__main__" :
                     if desktop != "None":
                         if "all" not in desktop  and not any([True for i in desktop if distro_desktop  in i]):
                             exit__("\nThis Module Support This Desktop '{}' Only .\n".format(desktop),7)
-
-                    
-                    commands = plugin__["__commands__"].copy()
+                    print(plugin__)
+                    if run_rollback_commands:
+                        commands = plugin__["__rollback_commands__"].copy()
+                    else:
+                        commands = plugin__["__run_task_commands__"].copy()
+                    if not commands:
+                        commands.append("\nNothing To Do.\n")
                     commands.append("echo Press any key to exit.")
                     commands.append("read")
+                    
                     file_to_run = write_to_tmp(commands)
                     while True:
                         os.system("clear")
                         print("\n"+real_url+"\n")
                         print("\nCommands To Run y/n ?\n")
                         count = 1
-                        for i in plugin__["__commands__"]:
-                            print("[Command {}]- {}".format(count,i))
-                            count += 1
+                        if run_rollback_commands:
+                            for i in plugin__["__rollback_commands__"]:
+                                print("[Command {}]- {}".format(count,i))
+                                count += 1
+                        else:
+                            for i in plugin__["__run_task_commands__"]:
+                                print("[Command {}]- {}".format(count,i))
+                                count += 1
                         answer = input("\n- ").strip()
                         if answer == "y" or answer == "Y" :
                             break

@@ -3,6 +3,7 @@
     "__distro__"         : ["all"],
     "__distro_version__" : ["all"],
     "__desktop__"        : ["all"],
-    "__commands__"       : ["mkdir -p ~/Downloads/xdm-setup","cd ~/Downloads/xdm-setup;wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz","tar -xJf xdm-setup-7.2.11.tar.xz","sudo chmod 755 ~/Downloads/xdm-setup/install.sh","sudo ~/Downloads/xdm-setup/install.sh"]
+    "__run_task_commands__"       : ["mkdir -p ~/Downloads/xdm-setup","cd ~/Downloads/xdm-setup;wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz","tar -xJf xdm-setup-7.2.11.tar.xz","sudo chmod 755 ~/Downloads/xdm-setup/install.sh","sudo ~/Downloads/xdm-setup/install.sh"],
+    "__rollback_commands__" : []
 
 }

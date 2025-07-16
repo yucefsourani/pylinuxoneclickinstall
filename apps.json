@@ -130,6 +130,16 @@
     ]
   },
   {
+    "name": "Codecs",
+    "description": "Multimedia coder/decoder (json).",
+    "icon": "codecs.png",
+    "url": "pylinuxoneclick://apps?codecs.json",
+    "category": "Multimedia",
+    "__distro__": [
+      "Fedora"
+    ]
+  },
+  {
     "name": "Fritzing",
     "description": "Electronic Design Tool Flatpak (json).",
     "icon": "52b1e48a757b7f28448b4567.png",

@@ -1,0 +1,8 @@
+{
+    "name": "Codecs",
+    "description": "Multimedia coder/decoder (json).",
+    "icon": "codecs.png",
+    "url": "pylinuxoneclick://apps?codecs.json",
+    "category": "Multimedia",
+    "__distro__": ["Fedora"]
+}

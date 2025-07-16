@@ -136,7 +136,7 @@
     "url": "pylinuxoneclick://apps?fritzing.json",
     "category": "Developer",
     "__distro__": [
-      "All"
+      "Flatpak"
     ]
   }
 ]

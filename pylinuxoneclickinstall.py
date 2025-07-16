@@ -138,8 +138,7 @@ def exit__(msg,code):
 
 if __name__ == "__main__" : 
     try:
-        #url = sys.argv[1]
-        url = "pylinuxoneclick://apps?albasheer.json"
+        url = sys.argv[1]
         run_rollback_commands = False
         real_url = os.path.join("https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/main/",url.split(":",1)[1][2:].replace("?","/"))
         if real_url.endswith("#"):
@@ -194,7 +193,7 @@ if __name__ == "__main__" :
                     if desktop != "None":
                         if "all" not in desktop  and not any([True for i in desktop if distro_desktop  in i]):
                             exit__("\nThis Module Support This Desktop '{}' Only .\n".format(desktop),7)
-                    print(plugin__)
+
                     if run_rollback_commands:
                         commands = plugin__["__rollback_commands__"].copy()
                     else:

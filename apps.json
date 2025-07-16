@@ -26,7 +26,7 @@
     "url": "pylinuxoneclick://apps?arduinoide.json",
     "category": "Developer",
     "__distro__": [
-      "All"
+      "Flatpak"
     ]
   },
   {

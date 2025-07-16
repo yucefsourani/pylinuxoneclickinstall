@@ -1,0 +1,8 @@
+{
+    "name": "Qbittorrent",
+    "description": "An open-source Bittorrent client (json).",
+    "icon": "qbittorrent.png",
+    "url": "pylinuxoneclick://apps?qbittorrent.json",
+    "category": "Internet",
+    "__distro__": ["Fedora"]
+}

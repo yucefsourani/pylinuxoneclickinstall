@@ -7,7 +7,8 @@
     "category": "Internet",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Google Chrome",
@@ -17,7 +18,8 @@
     "category": "Internet",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Arduino IDE",
@@ -27,7 +29,8 @@
     "category": "Developer",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Compression Utility",
@@ -37,7 +40,8 @@
     "category": "Utils",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Marker",
@@ -47,7 +51,8 @@
     "category": "Developer",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Firefox",
@@ -57,7 +62,8 @@
     "category": "Internet",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Opera",
@@ -67,7 +73,8 @@
     "category": "Internet",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Albasheer",
@@ -77,7 +84,8 @@
     "category": "Education",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Run"
   },
   {
     "name": "Mesa va/vdpau drivers",
@@ -87,7 +95,8 @@
     "category": "Multimedia",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Plasma Video thumbnails",
@@ -98,7 +107,8 @@
     "__distro__": [
       "Fedora",
       "KDE plasma"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Xdman",
@@ -108,7 +118,8 @@
     "category": "Internet",
     "__distro__": [
       "All"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "HandBrake",
@@ -118,7 +129,8 @@
     "category": "Multimedia",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "XFCE Video thumbnails",
@@ -129,7 +141,8 @@
     "__distro__": [
       "Fedora",
       "XFCE"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Arduino IDE V2",
@@ -139,7 +152,8 @@
     "category": "Developer",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Firefox",
@@ -149,7 +163,8 @@
     "category": "Internet",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Brave",
@@ -159,7 +174,8 @@
     "category": "Internet",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Vivaldi",
@@ -169,7 +185,8 @@
     "category": "Internet",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Ciano",
@@ -179,7 +196,8 @@
     "category": "Multimedia",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "GitKraken",
@@ -189,7 +207,8 @@
     "category": "Developer",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Codecs",
@@ -199,7 +218,8 @@
     "category": "Multimedia",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Fritzing",
@@ -209,7 +229,8 @@
     "category": "Developer",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Vlc",
@@ -219,7 +240,8 @@
     "category": "Multimedia",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Qbittorrent",
@@ -229,7 +251,8 @@
     "category": "Internet",
     "__distro__": [
       "Fedora"
-    ]
+    ],
+    "buttonlabel": "Install"
   },
   {
     "name": "Telegram Desktop",
@@ -239,6 +262,7 @@
     "category": "Internet",
     "__distro__": [
       "Flatpak"
-    ]
+    ],
+    "buttonlabel": "Install"
   }
 ]

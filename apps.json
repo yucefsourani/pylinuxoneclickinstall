@@ -101,6 +101,16 @@
     ]
   },
   {
+    "name": "Xdman",
+    "description": "Xtreme Download Manager 7.2.11 (json).",
+    "icon": "xdman.png",
+    "url": "pylinuxoneclick://apps?xdman.json",
+    "category": "Internet",
+    "__distro__": [
+      "All"
+    ]
+  },
+  {
     "name": "HandBrake",
     "description": "Video Transcoder (json).",
     "icon": "HandBrake_Icon.png",

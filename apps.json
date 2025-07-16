@@ -80,6 +80,16 @@
     ]
   },
   {
+    "name": "Mesa va/vdpau drivers",
+    "description": "(freeworld) Drivers contains video acceleration codecs (json).",
+    "icon": "T3-SiBhZ.svg",
+    "url": "pylinuxoneclick://apps?mesa_v_drivers_freeworld.json",
+    "category": "Multimedia",
+    "__distro__": [
+      "Fedora"
+    ]
+  },
+  {
     "name": "Plasma Video thumbnails",
     "description": "KDE Plasma File Manager video thumbnails (json).",
     "icon": "81dz0FkILtL.png",

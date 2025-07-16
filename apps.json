@@ -116,7 +116,7 @@
     "url": "pylinuxoneclick://apps?ciano.json",
     "category": "Multimedia",
     "__distro__": [
-      "All"
+      "Flatpak"
     ]
   },
   {

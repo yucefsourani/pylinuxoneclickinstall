@@ -1,99 +1,9 @@
 [
   {
-    "name": "Brave",
-    "description": "Install Brave Web Browser (json).",
-    "icon": "brave.png",
-    "url": "pylinuxoneclick://apps?brave.json",
-    "category": "Internet",
-    "__distro__": [
-      "Fedora"
-    ]
-  },
-  {
-    "name": "Ciano",
-    "description": "A multimedia file converter Flatpak (json).",
-    "icon": "ciano.png",
-    "url": "pylinuxoneclick://apps?ciano.json",
-    "category": "Multimedia",
-    "__distro__": [
-      "All"
-    ]
-  },
-  {
-    "name": "Arduino IDE",
-    "description": "Open-source electronics prototyping platform Flatpak (json).",
-    "icon": "arduino.svg",
-    "url": "pylinuxoneclick://apps?arduinoide.json",
-    "category": "Developer",
-    "__distro__": [
-      "All"
-    ]
-  },
-  {
-    "name": "Firefox",
-    "description": "Install Firefox Web Browser Flatpak (json).",
-    "icon": "appicns_Firefox.png",
-    "url": "pylinuxoneclick://apps?installfirefoxflatpak.json",
-    "category": "Internet",
-    "__distro__": [
-      "All"
-    ]
-  },
-  {
-    "name": "Vivaldi",
-    "description": "Install Vivaldi Web Browser (json).",
-    "icon": "vivaldi.png",
-    "url": "pylinuxoneclick://apps?vivaldi.json",
-    "category": "Internet",
-    "__distro__": [
-      "Fedora"
-    ]
-  },
-  {
-    "name": "Arduino IDE V2",
-    "description": "Open-source electronics prototyping platform Flatpak (json).",
-    "icon": "arduino.svg",
-    "url": "pylinuxoneclick://apps?arduinoide2.json",
-    "category": "Developer",
-    "__distro__": [
-      "All"
-    ]
-  },
-  {
-    "name": "Opera",
-    "description": "Install Opera Web Browser (json).",
-    "icon": "Opera-logo-256x256.png",
-    "url": "pylinuxoneclick://apps?opera.json",
-    "category": "Internet",
-    "__distro__": [
-      "Fedora"
-    ]
-  },
-  {
-    "name": "Fritzing",
-    "description": "Electronic Design Tool Flatpak (json).",
-    "icon": "52b1e48a757b7f28448b4567.png",
-    "url": "pylinuxoneclick://apps?fritzing.json",
-    "category": "Developer",
-    "__distro__": [
-      "All"
-    ]
-  },
-  {
-    "name": "Albasheer",
-    "description": "Electronic Quran Browser Flatpak (json).",
-    "icon": "albasheer-128.png",
-    "url": "pylinuxoneclick://apps?albasheer.json",
-    "category": "Education",
-    "__distro__": [
-      "All"
-    ]
-  },
-  {
-    "name": "Firefox",
-    "description": "Install Firefox Web Browser (json).",
-    "icon": "appicns_Firefox.png",
-    "url": "pylinuxoneclick://apps?installfirefox.json",
+    "name": "Chromium freeworld",
+    "description": "Install Chromium freeworld Web Browser (json).",
+    "icon": "Chromium_logo.png",
+    "url": "pylinuxoneclick://apps?chromiumfreeworld.json",
     "category": "Internet",
     "__distro__": [
       "Fedora"
@@ -110,13 +20,113 @@
     ]
   },
   {
-    "name": "Chromium freeworld",
-    "description": "Install Chromium freeworld Web Browser (json).",
-    "icon": "Chromium_logo.png",
-    "url": "pylinuxoneclick://apps?chromiumfreeworld.json",
+    "name": "Arduino IDE",
+    "description": "Open-source electronics prototyping platform Flatpak (json).",
+    "icon": "arduino.svg",
+    "url": "pylinuxoneclick://apps?arduinoide.json",
+    "category": "Developer",
+    "__distro__": [
+      "All"
+    ]
+  },
+  {
+    "name": "Firefox",
+    "description": "Install Firefox Web Browser (json).",
+    "icon": "appicns_Firefox.png",
+    "url": "pylinuxoneclick://apps?installfirefox.json",
     "category": "Internet",
     "__distro__": [
       "Fedora"
+    ]
+  },
+  {
+    "name": "Opera",
+    "description": "Install Opera Web Browser (json).",
+    "icon": "Opera-logo-256x256.png",
+    "url": "pylinuxoneclick://apps?opera.json",
+    "category": "Internet",
+    "__distro__": [
+      "Fedora"
+    ]
+  },
+  {
+    "name": "Albasheer",
+    "description": "Electronic Quran Browser Flatpak (json).",
+    "icon": "albasheer-128.png",
+    "url": "pylinuxoneclick://apps?albasheer.json",
+    "category": "Education",
+    "__distro__": [
+      "All"
+    ]
+  },
+  {
+    "name": "Arduino IDE V2",
+    "description": "Open-source electronics prototyping platform Flatpak (json).",
+    "icon": "arduino.svg",
+    "url": "pylinuxoneclick://apps?arduinoide2.json",
+    "category": "Developer",
+    "__distro__": [
+      "All"
+    ]
+  },
+  {
+    "name": "Firefox",
+    "description": "Install Firefox Web Browser Flatpak (json).",
+    "icon": "appicns_Firefox.png",
+    "url": "pylinuxoneclick://apps?installfirefoxflatpak.json",
+    "category": "Internet",
+    "__distro__": [
+      "All"
+    ]
+  },
+  {
+    "name": "Brave",
+    "description": "Install Brave Web Browser (json).",
+    "icon": "brave.png",
+    "url": "pylinuxoneclick://apps?brave.json",
+    "category": "Internet",
+    "__distro__": [
+      "Fedora"
+    ]
+  },
+  {
+    "name": "Vivaldi",
+    "description": "Install Vivaldi Web Browser (json).",
+    "icon": "vivaldi.png",
+    "url": "pylinuxoneclick://apps?vivaldi.json",
+    "category": "Internet",
+    "__distro__": [
+      "Fedora"
+    ]
+  },
+  {
+    "name": "Ciano",
+    "description": "A multimedia file converter Flatpak (json).",
+    "icon": "ciano.png",
+    "url": "pylinuxoneclick://apps?ciano.json",
+    "category": "Multimedia",
+    "__distro__": [
+      "All"
+    ]
+  },
+  {
+    "name": "GitKraken",
+    "description": "For repo management, in-app code editing and issue tracking (Flatpak json).",
+    "icon": "GitKraken.png",
+    "url": "pylinuxoneclick://apps?gitkraken.json",
+    "category": "Developer",
+    "__distro__": [
+      "All"
+    ]
+  },
+  {
+    "name": "Fritzing",
+    "description": "Electronic Design Tool Flatpak (json).",
+    "icon": "52b1e48a757b7f28448b4567.png",
+    "url": "pylinuxoneclick://apps?fritzing.json",
+    "category": "Developer",
+    "__distro__": [
+      "All"
     ]
   }
 ]

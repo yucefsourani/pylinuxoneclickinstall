@@ -64,6 +64,9 @@ You can specify the device architecture and on which distribution or interface t
 As for \_\_distro\_\_ in the files in "data", it is only displayed on the web page in orange so that they can be distinguished even before clicking, because at this time it is not possible to recognize the information of the operating system.
 
 
+# Apps Store
+
+https://yucefsourani.github.io/pylinuxoneclickinstall/
 The web page was created using Gemini with many manual modifications. It is a static web page based on HTML, JS, and CSS, and it collects information from the apps.json file using a JS script that runs from the user's browser. The apss.json file is generated through GitHub Action to flatten all JSON files in the "data" folder and merge them into a single file. This action runs automatically whenever any file in the "data" folder is changed.
 
 

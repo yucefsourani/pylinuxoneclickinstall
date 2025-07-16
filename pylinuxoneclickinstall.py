@@ -201,7 +201,7 @@ if __name__ == "__main__" :
                         commands = plugin__["__run_task_commands__"].copy()
                     if not commands:
                         nothing_to_do = True
-                        commands.append("\nNothing To Do.\n")
+                        commands.append("echo Nothing To Do.")
                     commands.append("echo Press any key to exit.")
                     commands.append("read")
                     

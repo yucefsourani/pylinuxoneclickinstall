@@ -126,7 +126,7 @@
     "url": "pylinuxoneclick://apps?gitkraken.json",
     "category": "Developer",
     "__distro__": [
-      "All"
+      "Flatpak"
     ]
   },
   {

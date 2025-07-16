@@ -8,7 +8,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Google Chrome",
@@ -19,7 +20,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Arduino IDE",
@@ -30,7 +32,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Compression Utility",
@@ -41,7 +44,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Marker",
@@ -52,7 +56,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Firefox",
@@ -63,7 +68,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Opera",
@@ -74,7 +80,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Albasheer",
@@ -85,7 +92,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Run"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Mesa va/vdpau drivers",
@@ -96,7 +104,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Plasma Video thumbnails",
@@ -108,7 +117,8 @@
       "Fedora",
       "KDE plasma"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Xdman",
@@ -119,7 +129,8 @@
     "__distro__": [
       "All"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "HandBrake",
@@ -130,7 +141,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "XFCE Video thumbnails",
@@ -142,7 +154,8 @@
       "Fedora",
       "XFCE"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Arduino IDE V2",
@@ -153,7 +166,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Firefox",
@@ -164,7 +178,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Brave",
@@ -175,7 +190,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Vivaldi",
@@ -186,7 +202,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Ciano",
@@ -197,7 +214,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "GitKraken",
@@ -208,7 +226,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Codecs",
@@ -219,7 +238,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Fritzing",
@@ -230,7 +250,8 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Vlc",
@@ -241,7 +262,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Qbittorrent",
@@ -252,7 +274,8 @@
     "__distro__": [
       "Fedora"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   },
   {
     "name": "Telegram Desktop",
@@ -263,6 +286,7 @@
     "__distro__": [
       "Flatpak"
     ],
-    "buttonlabel": "Install"
+    "run_task_buttonlabel": "Install",
+    "rollback_buttonlabel": "Remove"
   }
 ]

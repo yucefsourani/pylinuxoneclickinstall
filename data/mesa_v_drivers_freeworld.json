@@ -1,0 +1,8 @@
+{
+    "name": "Mesa va/vdpau drivers",
+    "description": "(freeworld) Drivers contains video acceleration codecs (json).",
+    "icon": "T3-SiBhZ.svg",
+    "url": "pylinuxoneclick://apps?mesa_v_drivers_freeworld.json",
+    "category": "Multimedia",
+    "__distro__": ["Fedora"]
+}

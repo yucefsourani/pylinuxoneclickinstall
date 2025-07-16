@@ -333,7 +333,7 @@ Visit Project On
                 const card = document.createElement('div');
                 card.className = 'app-card';
                 const randomColor = getRandomHexColor();
-                const rollback_button = app.rollback_buttonlabel  ?  `<a href="${app.url}#" target="_blank" rel="noopener noreferrer" class="right">${app.rollback_buttonlabel}</a>` : `<a href="#" target="_blank" rel="noopener noreferrer" style="pointer-events: none;" class="right">Not Available</a>` ;
+                const rollback_button = app.rollback_buttonlabel  ?  `<a href="${app.url}#" target="_blank" rel="noopener noreferrer" class="right">${app.rollback_buttonlabel}</a>` : `<a href="#" target="_blank" rel="noopener noreferrer" style="pointer-events: none;opacity: 0.5;" class="right">unavailable</a>` ;
                 card.innerHTML = `
                     <img src="https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/refs/heads/main/icons/${app.icon}" alt="${app.name} Icon">
                     <h3>${app.name}</h3>

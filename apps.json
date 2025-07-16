@@ -60,6 +60,16 @@
     ]
   },
   {
+    "name": "HandBrake",
+    "description": "Video Transcoder (json).",
+    "icon": "HandBrake_Icon.png",
+    "url": "pylinuxoneclick://apps?handbrake.json",
+    "category": "Multimedia",
+    "__distro__": [
+      "Flatpak"
+    ]
+  },
+  {
     "name": "Arduino IDE V2",
     "description": "Open-source electronics prototyping platform Flatpak (json).",
     "icon": "arduino.svg",

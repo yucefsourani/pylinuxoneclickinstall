@@ -4,5 +4,6 @@
     "icon": "ciano.png",
     "url": "pylinuxoneclick://apps?ciano.json",
     "category": "Multimedia",
-    "__distro__": ["Flatpak"]
+    "__distro__": ["Flatpak"],
+    "buttonlabel" : "Install"
 }

@@ -4,5 +4,6 @@
     "icon": "codecs.png",
     "url": "pylinuxoneclick://apps?codecs.json",
     "category": "Multimedia",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

@@ -4,5 +4,6 @@
     "icon": "com.github.fabiocolacio.marker.svg",
     "url": "pylinuxoneclick://apps?marker.json",
     "category": "Developer",
-    "__distro__": ["Flatpak"]
+    "__distro__": ["Flatpak"],
+    "buttonlabel" : "Install"
 }

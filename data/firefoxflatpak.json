@@ -4,5 +4,6 @@
     "icon": "appicns_Firefox.png",
     "url": "pylinuxoneclick://apps?installfirefoxflatpak.json",
     "category": "Internet",
-    "__distro__": ["Flatpak"]
+    "__distro__": ["Flatpak"],
+    "buttonlabel" : "Install"
 }

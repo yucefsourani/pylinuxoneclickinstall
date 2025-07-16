@@ -4,5 +4,6 @@
     "icon": "vlc-player-logo.png",
     "url": "pylinuxoneclick://apps?vlc.json",
     "category": "Multimedia",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

@@ -4,5 +4,6 @@
     "icon": "vivaldi.png",
     "url": "pylinuxoneclick://apps?vivaldi.json",
     "category": "Internet",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

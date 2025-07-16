@@ -4,5 +4,6 @@
     "icon": "HandBrake_Icon.png",
     "url": "pylinuxoneclick://apps?handbrake.json",
     "category": "Multimedia",
-    "__distro__": ["Flatpak"]
+    "__distro__": ["Flatpak"],
+    "buttonlabel" : "Install"
 }

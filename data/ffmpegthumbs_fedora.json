@@ -4,5 +4,6 @@
     "icon": "81dz0FkILtL.png",
     "url": "pylinuxoneclick://apps?ffmpegthumbs_fedora.json",
     "category": "System",
-    "__distro__": ["Fedora","KDE plasma"]
+    "__distro__": ["Fedora","KDE plasma"],
+    "buttonlabel" : "Install"
 }

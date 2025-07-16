@@ -4,5 +4,6 @@
     "icon": "Chromium_logo.png",
     "url": "pylinuxoneclick://apps?chromiumfreeworld.json",
     "category": "Internet",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

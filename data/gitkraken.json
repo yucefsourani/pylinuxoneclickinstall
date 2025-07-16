@@ -4,5 +4,6 @@
     "icon": "GitKraken.png",
     "url": "pylinuxoneclick://apps?gitkraken.json",
     "category": "Developer",
-    "__distro__": ["Flatpak"]
+    "__distro__": ["Flatpak"],
+    "buttonlabel" : "Install"
 }

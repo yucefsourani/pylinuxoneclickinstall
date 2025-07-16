@@ -4,5 +4,6 @@
     "icon": "tools_settings_tool_preferences-512.png",
     "url": "pylinuxoneclick://apps?compression_fedora.json",
     "category": "Utils",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

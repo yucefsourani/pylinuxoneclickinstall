@@ -4,5 +4,6 @@
     "icon": "xdman.png",
     "url": "pylinuxoneclick://apps?xdman.json",
     "category": "Internet",
-    "__distro__": ["All"]
+    "__distro__": ["All"],
+    "buttonlabel" : "Install"
 }

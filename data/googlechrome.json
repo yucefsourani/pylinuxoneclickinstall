@@ -4,5 +4,6 @@
     "icon": "Chrome.png",
     "url": "pylinuxoneclick://apps?googlechrome.json",
     "category": "Internet",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

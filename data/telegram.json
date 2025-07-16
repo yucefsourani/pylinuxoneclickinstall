@@ -4,5 +4,6 @@
     "icon": "telegram.png",
     "url": "pylinuxoneclick://apps?telegram.json",
     "category": "Internet",
-    "__distro__": ["Flatpak"]
+    "__distro__": ["Flatpak"],
+    "buttonlabel" : "Install"
 }

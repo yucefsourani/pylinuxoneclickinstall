@@ -4,5 +4,6 @@
     "icon": "qbittorrent.png",
     "url": "pylinuxoneclick://apps?qbittorrent.json",
     "category": "Internet",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

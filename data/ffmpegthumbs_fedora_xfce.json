@@ -4,5 +4,6 @@
     "icon": "1200px-Thunar.svg.png",
     "url": "pylinuxoneclick://apps?ffmpegthumbs_fedora_xfce.json",
     "category": "System",
-    "__distro__": ["Fedora","XFCE"]
+    "__distro__": ["Fedora","XFCE"],
+    "buttonlabel" : "Install"
 }

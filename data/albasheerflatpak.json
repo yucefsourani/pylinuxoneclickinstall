@@ -4,5 +4,6 @@
     "icon": "albasheer-128.png",
     "url": "pylinuxoneclick://apps?albasheer.json",
     "category": "Education",
-    "__distro__": ["Flatpak"]
+    "__distro__": ["Flatpak"],
+    "buttonlabel" : "Run"
 }

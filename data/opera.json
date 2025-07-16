@@ -4,5 +4,6 @@
     "icon": "Opera-logo-256x256.png",
     "url": "pylinuxoneclick://apps?opera.json",
     "category": "Internet",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

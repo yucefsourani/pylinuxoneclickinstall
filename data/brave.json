@@ -4,5 +4,6 @@
     "icon": "brave.png",
     "url": "pylinuxoneclick://apps?brave.json",
     "category": "Internet",
-    "__distro__": ["Fedora"]
+    "__distro__": ["Fedora"],
+    "buttonlabel" : "Install"
 }

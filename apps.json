@@ -45,7 +45,7 @@
       "Fedora"
     ],
     "run_task_buttonlabel": "Install",
-    "rollback_buttonlabel": "Remove"
+    "rollback_buttonlabel": ""
   },
   {
     "name": "Marker",
@@ -239,7 +239,7 @@
       "Fedora"
     ],
     "run_task_buttonlabel": "Install",
-    "rollback_buttonlabel": "Remove"
+    "rollback_buttonlabel": ""
   },
   {
     "name": "Fritzing",

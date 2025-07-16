@@ -220,7 +220,6 @@ if __name__ == "__main__" :
                                 for i in plugin__["__run_task_commands__"]:
                                     print("[Command {}]- {}".format(count,i))
                                     count += 1
-                            if 
                             answer = input("\n- ").strip()
                             if answer == "y" or answer == "Y" :
                                 break

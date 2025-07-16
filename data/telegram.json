@@ -1,0 +1,8 @@
+{
+    "name": "Telegram Desktop",
+    "description": "Cloud-based mobile and desktop messaging app Flatpak (json).",
+    "icon": "telegram.png",
+    "url": "pylinuxoneclick://apps?telegram.json",
+    "category": "Internet",
+    "__distro__": ["Flatpak"]
+}

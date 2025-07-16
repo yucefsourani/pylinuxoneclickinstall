@@ -30,6 +30,16 @@
     ]
   },
   {
+    "name": "Marker",
+    "description": "Powerful markdown editor for the GNOME desktop (json).",
+    "icon": "com.github.fabiocolacio.marker.svg",
+    "url": "pylinuxoneclick://apps?marker.json",
+    "category": "Developer",
+    "__distro__": [
+      "Flatpak"
+    ]
+  },
+  {
     "name": "Firefox",
     "description": "Install Firefox Web Browser (json).",
     "icon": "appicns_Firefox.png",

@@ -4,5 +4,5 @@
     "icon": "arduino.svg",
     "url": "pylinuxoneclick://apps?arduinoide2.json",
     "category": "Developer",
-    "__distro__": ["All"]
+    "__distro__": ["Flatpak"]
 }

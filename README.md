@@ -27,6 +27,8 @@
 https://yucefsourani.github.io/pylinuxoneclickinstall/
 
 
+![Alt text](https://raw.githubusercontent.com/yucefsourani/pylinuxoneclickinstall/main/Screenshot1.png "Screenshot")
+
 
 
 # to install (Beta)

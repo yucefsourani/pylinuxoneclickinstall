@@ -13,7 +13,7 @@
 أما \_\_distro\_\_ في الملفات في data هي فقط لتعرض في صفحة الويب بلون برتقالي حتى يتم تميزهم حتى قبل الضغط  لأن في هذا الوقت لا يمكن التعرف على معلومات النظام الذي يعمل .
 
 
-صفحة الويب تم إنشائها من خلال gemini مع الكثير من التعديلات اليدوية وهي صفحة ويب ثايتة static تعتمد على html و js و css وتجمع المعلومات من خلال ملف apps.json عن طريق سكربت js يعمل من متصفح المستخدم ,وملف apss.json يتم توليده من خلال github action  لعمل flatten لكل ملفات ال json في مجلد data ودمجهم في ملف واحد هذه ال action تعمل بشكل تلقائي عند أي تغير لأي ملف في مجلد data .
+صفحة الويب تم إنشائها من خلال gemini مع الكثير من التعديلات اليدوية وهي صفحة ويب ثابتة static تعتمد على html و js و css وتجمع المعلومات من خلال ملف apps.json عن طريق سكربت js يعمل من متصفح المستخدم ,وملف apps.json يتم توليده من خلال github action  لعمل flatten لكل ملفات ال json في مجلد data ودمجهم في ملف واحد هذه ال action تعمل بشكل تلقائي عند أي تغير لأي ملف في مجلد data .
 
 
 لا يتم بدأ تنفيذ الأوامر قبل عرضها على المستخدم وموافقته عليها بشكل صريح وممكن أيضا الإطلاع على الأوامر من خلال الضغط على Detail في صفحت الويب .
@@ -69,7 +69,7 @@ You can specify the device architecture and on which distribution or interface t
 As for \_\_distro\_\_ in the files in "data", it is only displayed on the web page in orange so that they can be distinguished even before clicking, because at this time it is not possible to recognize the information of the operating system.
 
 
-The web page was created using Gemini with many manual modifications. It is a static web page based on HTML, JS, and CSS, and it collects information from the apps.json file using a JS script that runs from the user's browser. The apss.json file is generated through GitHub Action to flatten all JSON files in the "data" folder and merge them into a single file. This action runs automatically whenever any file in the "data" folder is changed.
+The web page was created using Gemini with many manual modifications. It is a static web page based on HTML, JS, and CSS, and it collects information from the apps.json file using a JS script that runs from the user's browser. The apps.json file is generated through GitHub Action to flatten all JSON files in the "data" folder and merge them into a single file. This action runs automatically whenever any file in the "data" folder is changed.
 
 
 Commands  are not executed before they are presented to the user and explicitly approved by them. Commands can also be viewed by clicking on "Detail" on the web page.
